@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1;
+}
+.main-header {
+    display: flex;
+    align-items: center;
+}
+.collapsible-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.collapsible-header .icon {
+    margin-right: 10px;
+}
+.collapsible-content {
+    display: none;
+    padding-left: 30px;
+}
