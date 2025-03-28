@@ -1,71 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Wisdom Notes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        .main-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .collapsible-header {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            padding: 12px 15px;
-            background-color: #f5f5f5;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
-        .collapsible-header .icon {
-            margin-right: 10px;
-        }
-        .teacher-section {
-            margin-bottom: 20px;
-        }
-        .collapsible-content {
-            display: none;
-            padding: 15px;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 0 0 5px 5px;
-        }
-        .teaching-subsection {
-            margin-bottom: 15px;
-        }
-        .teaching-subsection h4 {
-            margin-top: 0;
-            color: #2c3e50;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 3px solid #ddd;
-            padding-left: 15px;
-            margin: 15px 0;
-        }
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Novatransmutes - Teachers</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <h1 class="site-title">Novatransmutes</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Teachers</a>
+                <a href="wisdom.html" class="nav-link">Wisdom Notes</a>
+            </nav>
+        </header>
+<main class="content-container">
     <div class="main-header">
         <h1>Wisdom Notes</h1>
     </div>
@@ -189,25 +138,9 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const headers = document.querySelectorAll('.collapsible-header');
-            
-            headers.forEach(header => {
-                header.addEventListener('click', function() {
-                    const icon = this.querySelector('.icon');
-                    const content = this.nextElementSibling.querySelector('.collapsible-content');
-                    
-                    if (content.style.display === 'none' || content.style.display === '') {
-                        content.style.display = 'block';
-                        icon.textContent = '▼';
-                    } else {
-                        content.style.display = 'none';
-                        icon.textContent = '▶';
-                    }
-                });
-            });
-        });
-    </script>
+</main>  
+<footer class="site-footer">
+    <p>© 2025 Novatransmutes. All wisdom shared with love.</p>
+</footer> 
 </body>
 </html>

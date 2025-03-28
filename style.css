@@ -1,24 +1,80 @@
+/* ===== BASE STYLES ===== */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+    --spacing-unit: 1rem;
+    --border-radius: 8px;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: var(--text-color);
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    line-height: 1;
+    padding: 0 var(--spacing-unit);
 }
-.main-header {
+
+/* ===== HEADER/NAV ===== */
+.site-header {
+    padding: var(--spacing-unit) 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.site-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-unit);
+}
+
+.main-nav {
     display: flex;
-    align-items: center;
+    gap: calc(var(--spacing-unit) * 2);
 }
-.collapsible-header {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
+
+.nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
 }
-.collapsible-header .icon {
-    margin-right: 10px;
+
+.nav-link:hover {
+    text-decoration: underline;
 }
-.collapsible-content {
-    display: none;
-    padding-left: 30px;
+
+/* ===== CONTENT HIERARCHY ===== */
+.content-container {
+    margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin: calc(var(--spacing-unit) * 1.5) 0 var(--spacing-unit);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin: calc(var(--spacing-unit) * 1.25) 0 calc(var(--spacing-unit) * 0.75);
+    color: var(--primary-color);
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+    text-align: center;
+    padding: var(--spacing-unit) 0;
+    margin-top: calc(var(--spacing-unit) * 2);
+    border-top: 1px solid #eee;
+    color: #666;
 }
