@@ -183,3 +183,57 @@ body {
     padding: 2px 4px;
     border-radius: 3px;
   }
+  h1:first-of-type {
+    position: relative;
+    padding-bottom: 20px;
+    margin: 40px 0;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+  h1:first-of-type::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #3498db; /* Your accent color */
+    margin: 20px auto 0;
+  }
+  
+/* Your delicATE color */
+  
+.quote-banner  {
+  background: linear-gradient(135deg, #0078d4, #004e8c);
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 0.3rem 0.5rem; /* Reduced from 3rem/2rem */
+    
+}
+  
+.quote-line-1 {
+  color: #f0f0f0;
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.quote-line-2 {
+  color: rgba(240,240,240,0.9);
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-top: 0.6rem;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .quote-line-1 { font-size: 1.8rem; }
+  .quote-line-2 { font-size: 1.2rem; }
+}
+.light-quote {
+  text-align: center;
+  margin: 0 auto; /* Ensures proper centering */
+}
+
